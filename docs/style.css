@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #adadad;
+    background-color: #f4f4f4; /* couleur finale choisie */
     color: #333;
 }
 
@@ -156,13 +156,6 @@ footer {
 
 .cv-button i {
     margin-right: 8px;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0px;
 }
 
 .skills-container {
