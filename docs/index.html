@@ -66,34 +66,33 @@
             <div class="boxed">
             <h2>Projets</h2>
             <div class="cartes-container">
-            <div class="carte" onclick="toggleCarte(this)">
-            <h3>InfoDev</h3>
-            <p>J'ai crée un site vitrine pour un AP. Vous pouvez le trouver sur mon github.</p>
-            <div class="contenu-cache">
-                <img src="assets/images/infodev_home.png" alt="Image de la page d'accueil du site InfoDev" class="image-projet">
-                <p>Voici une image de la page d'accueil du site InfoDev.</p>
-            </div>
-            </div>
+                <div class="carte" onclick="toggleCarte(this)">
+                    <h3>InfoDev</h3>
+                    <p>J'ai crée un site vitrine pour un AP. Vous pouvez le trouver sur mon github.</p>
+                    <div class="contenu-cache">
+                        <img src="assets/infodev_home.png" alt="Image de la page d'accueil du site InfoDev" class="image-projet" onclick="openLightbox(this)">
+                        <p>Voici une image de la page d'accueil du site InfoDev.</p>
+                    </div>
+                </div>
 
-            <div class="carte" onclick="toggleCarte(this)">
-            <h3>TP GLPI</h3>
-            <p>J'ai fait un TP sur GLPI qui fait l'analyse de différent outils.</p>
-            <div class="contenu-cache">
-                <p>Voici un document de l' analyse de GLPI avec ses avantages et inconvégnant.</p>
-                <a href="assets/GLPI_analyse.docx" download class="cv-button">
-                <i class="fas fa-download"></i> Télécharger mon compte rendu
-                </a>
-            </div>
-            </div>
+                <div class="carte" onclick="toggleCarte(this)">
+                    <h3>TP GLPI</h3>
+                    <p>J'ai fait un TP sur GLPI qui fait l'analyse de différent outils.</p>
+                    <div class="contenu-cache">
+                        <img src="assets/GLPI_tableau.png" alt="Image de la page d'accueil du site InfoDev" class="image-projet" onclick="openLightbox(this)">
+                        <p>Voici une image de la page d'accueil du site InfoDev.</p>
+                        </a>
+                    </div>
+                </div>
 
-            <div class="carte" onclick="toggleCarte(this)">
-            <h3>TP sauvgarde</h3>
-            <p>J'ai crée un site vitrine pour un AP. Vous pouvez le trouver sur mon github.</p>
-            <div class="contenu-cache">
-                <p>Voici plus d'informations révélées après le clic !</p>
-                <p>Tu peux y mettre ce que tu veux.</p>
-            </div>
-            </div>
+                <div class="carte" onclick="toggleCarte(this)">
+                    <h3>TP sauvgarde</h3>
+                    <p>J'ai crée un site vitrine pour un AP. Vous pouvez le trouver sur mon github.</p>
+                    <div class="contenu-cache">
+                        <p>Voici plus d'informations révélées après le clic !</p>
+                        <p>Tu peux y mettre ce que tu veux.</p>
+                    </div>
+                </div>
             </div>
             </div>
         </div>
@@ -101,17 +100,25 @@
         <div class="section" id="projets">
             <div class="boxed">
                 <h2>Stages</h2>
-
-                <div class="carte" onclick="toggleCarte(this)">
-                    <h3>Ablatom</h3>
-                    <p>J'ai améliorer le site web ablatom.fr avec une demarche SEO(Search Engine Optimization) ce qui à améliorer à la fin son référencement.</p>
-                    <div class="contenu-cache">
-                        <p>Voici plus d'informations révélées après le clic !</p>
-                        <p>Tu peux y mettre ce que tu veux.</p>
+                <div class="cartes-container">
+                    <div class="carte">
+                        <h3>Ablatom</h3>
+                        <p>J'ai améliorer le site web ablatom.fr avec une demarche SEO(Search Engine Optimization) ce qui à améliorer à la fin son référencement.</p>
+                        <div class="contenu-cache">
+                            <p>Voici plus d'informations révélées après le clic !</p>
+                            <p>Tu peux y mettre ce que tu veux.</p>
+                        </div>
                     </div>
-                </div>
 
-                <p><b>WyseLight</b>: J'ai améliorer leur application avec comme mission de trouver les bugs puis de les résoudre, l'application étais codé  en PYTHON et en Kivy.</p>
+                    <div class="carte">
+                        <h3>WyseLight</h3>
+                        <p>J'ai améliorer leur application avec comme mission de trouver les bugs puis de les résoudre, l'application étais codé  en PYTHON et en Kivy.</p>
+                        <div class="contenu-cache">
+                            <p>Voici plus d'informations révélées après le clic !</p>
+                            <p>Tu peux y mettre ce que tu veux.</p>
+                        </div>
+                    </div>
+            </div>
             </div>
         </div>
 
@@ -122,7 +129,7 @@
                     <a href="assets/CV_Tristan_ROUX_v3.pdf" download class="cv-button">
                         <i class="fas fa-download"></i> Télécharger mon CV
                     </a>
-                    <a href="Tableau de synthèse_TristanROUX.xlsx" download class="cv-button">
+                    <a href="assets/Tableau de synthèse_TristanROUX.xlsx" download class="cv-button">
                         <i class="fas fa-download"></i> Télécharger mon tableau de synthèse
                     </a>
                     <a href="assets/Les-Dernieres-Tendances-en-Intelligence-Artificielle.pptx" download class="cv-button">
@@ -141,8 +148,13 @@
                     <li>GitHub: https://github.com/StudentTristan</li>
                 </ul>
             </div>
-        </div>
 
+        </div>
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+        </div>
+          
     </body>
     <script src="js/app.js"></script>
 </html>
