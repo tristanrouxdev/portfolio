@@ -16,7 +16,7 @@ Ce portfolio est développé dans le cadre de mon épreuve de **BTS SIO option S
 ## Comment utiliser ?
 
 Ce portfolio est un outil destiné à toute personne souhaitant consulter mon parcours et mes réalisations.  
-Aucune installation spécifique n'est nécessaire : il suffit de se rendre sur le **lien du site**.
+Aucune installation spécifique n'est nécessaire : il suffit de se rendre sur le **https://tristanrouxdev.github.io/portfolio/**.
 
 ## Contribution
 
